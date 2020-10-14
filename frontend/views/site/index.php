@@ -1,4 +1,5 @@
 <?php
+use kartik\select2\Select2;
 
 /* @var $this yii\web\View */
 
@@ -51,3 +52,15 @@ $this->title = 'My Yii Application';
 
     </div>
 </div>
+
+<?php
+echo '<label class="control-label">Provinces</label>';
+echo Select2::widget([
+    'name' => 'select_province',
+    'data' => $data,
+    'options' => [
+        'placeholder' => 'Select provinces ...',
+        // 'multiple' => true
+    ],
+]);
+?>
