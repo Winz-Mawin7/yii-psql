@@ -57,10 +57,10 @@ $this->title = 'My Yii Application';
 echo '<label class="control-label">Provinces</label>';
 echo Select2::widget([
     'name' => 'select_province',
-    'data' => $data,
+    'data' => $provinces,
     'options' => [
         'placeholder' => 'Select provinces ...',
-        // 'multiple' => true
+       // 'multiple' => true
     ],
 ]);
 ?>
